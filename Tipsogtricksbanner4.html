@@ -10,16 +10,18 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 650px;
+  max-width: 900px;
   position: relative;
   margin: auto;
+  columns: 3;
+  column-width: 200px;
 }
 
-/* Video container */
-.video-container {
-  position: absolute;
-  margin: auto;
+[class^="main-"] {
+  break-before: column;
+  text-align: center;
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -69,12 +71,9 @@ img {vertical-align: middle;}
 .text-block {
   position: absolute;
   bottom: -30px;
-  left: 0px;
   background-color: #f6f6f6;
   color: #256575;
-  padding-left: 5px;
-  padding-right: -5px;
-  width:160px;
+  width:300px;
   height:30px;
   font-size:9px;
   text-align:center;
@@ -87,7 +86,7 @@ img {vertical-align: middle;}
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: -50;
 }
 
 /* The dots/bullets/indicators */
@@ -95,6 +94,7 @@ img {vertical-align: middle;}
   cursor: pointer;
   height: 10px;
   width: 10px;
+  bottom: 0px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -134,37 +134,51 @@ img {vertical-align: middle;}
 
 <p style="font-family:verdana; color:#256575;text-align:center;font-size:120%;"> Tips og tricks - videoguides </p> <br>
 
-<div class="slideshow-container" align="center" style="max-height:100px;">
+<div class="slideshow-container" align="center">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 2</div>
+  
+  <div class="main-one">
   <a target="_blank" href="http://intranet.rm.dk/it/business-intelligence-bi/guides_og_vejledninger/sma-videoguides/">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/hvid-se-alle-tips-og-tricks.png" hspace="3" alt="Se alle tips og tricks!" title="Se alle tips og tricks" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/hvid-se-alle-tips-og-tricks.png" alt="Se alle tips og tricks!" title="Se alle tips og tricks" style="width:175px;">
   <div class="text-block"><p>Se alle tips og tricks!</p></div>
+  </div>
 
+  <div class="main-two">
   <a target="_blank" href="https://app.vyond.com/videos/a33f48b7-04d3-43fc-9a14-0d9a3cf5c59e">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-gemmer-du-en-visning.png" hspace="3" alt="Sådan gemmer du en visning" title="Sådan gemmer du en visning" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-gemmer-du-en-visning.png" alt="Sådan gemmer du en visning" title="Sådan gemmer du en visning" style="width:175px;">
   <div class="text-block"><p>Sådan gemmer du en visning<br>(00.44)</p></div>
+  </div>
 
+  <div class="main-three">
   <a  target="_blank" href="https://app.vyond.com/videos/b6651ca1-9ee3-417c-a512-b25229913015">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-printer-du-en-visning.png" hspace="3" alt="Sådan printer du en visning" title="Sådan printer du en visning" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-printer-du-en-visning.png" alt="Sådan printer du en visning" title="Sådan printer du en visning" style="width:175px;">
   <div class="text-block"><p>Sådan deler du gemte visninger<br>(01.02)</p></div>
+  </div>
   
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 2</div>
+  
+  <div class="main-one">
   <a target="_blank" href="https://app.vyond.com/videos/d842cb09-081a-4bdc-be8f-952529d95d18">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-deler-du-en-gemt-visning.png" hspace="3" alt="Sådan deler du gemte visninger" title="Sådan deler du gemte visninger" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-deler-du-en-gemt-visning.png" hspace="10" alt="Sådan deler du gemte visninger" title="Sådan deler du gemte visninger" style="width:175px;">
   <div class="text-block"><p>Sådan printer du en visning<br>(01.05)</p></div>
+  </div>
 
+  <div class="main-two">
   <a target="_blank" href="https://app.vyond.com/videos/fe762057-819b-4864-a562-3835b0aba2f1">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-abonnerer-du-pa-en-rapport.png" hspace="3" alt="Sådan abonnerer du på en visning" title="Sådan abonnerer du på en visning" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-abonnerer-du-pa-en-rapport.png" hspace="10" alt="Sådan abonnerer du på en visning" title="Sådan abonnerer du på en visning" style="width:175px;">
   <div class="text-block"><p>Sådan abonnerer du på en visning<br>(00.44)</p></div>
+  </div>
 
+  <div class="main-three">
   <a target="_blank" href="https://app.vyond.com/videos/11ab91ca-6a76-43ee-b3d6-bc39427acb87">
-  <img src="http://bi-portal.intra.rm.dk/siteassets/bi-laringsportal/hjalpeikoner/sadan-sletter-du-gemte-visninger.png" hspace="3" alt="Sådan sletter du gemte visninger" title="Sådan sletter du gemte visninger" style="width:175px;">
+  <img src="http://bi-portal.intra.rm.dk/siteassets/bi-laringsportal/hjalpeikoner/sadan-sletter-du-gemte-visninger.png" hspace="10" alt="Sådan sletter du gemte visninger" title="Sådan sletter du gemte visninger" style="width:175px;">
   <div class="text-block"><p>Sådan sletter du gemte visninger<br>(00.46)</p></div>
+  </div>
 
 </div>
 
@@ -174,7 +188,7 @@ img {vertical-align: middle;}
 </div>
 <br>
 
-<div style="text-align:center">
+<div style="text-align:center;">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
 </div>
