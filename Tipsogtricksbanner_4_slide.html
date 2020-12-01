@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Af eller anden grund skal billederne på samme slide have forskellige pixelhøjder for at alt teksten vises korrekt -->
+
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana;}
@@ -56,13 +59,13 @@ img {vertical-align: middle;}
   background-color: rgba(0,0,0,0.7);
 }
 
-/* Text block (fra original) */
+/* Text block (fra original) <!-- (900-160)/antal billeder pr. slide +- --> */
 .text-block {
   position: absolute;
   bottom: -30px;
   background-color: #f6f6f6;
   color: #256575;
-  width:185px;
+  width:175px; 
   height:30px;
   font-size:9px;
   text-align:center;
@@ -126,48 +129,48 @@ img {vertical-align: middle;}
   
   <div class="main-one">
   <a target="_blank" href="http://intranet.rm.dk/it/business-intelligence-bi/guides_og_vejledninger/sma-videoguides/">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/hvid-se-alle-tips-og-tricks.png" hspace="10" alt="Se alle tips og tricks!" title="Se alle tips og tricks" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/hvid-se-alle-tips-og-tricks.png" alt="Se alle tips og tricks!" title="Se alle tips og tricks" style="width:175px;">
   <div class="text-block"><p>Se alle tips og tricks!</p></div>
   </div>
 
   <div class="main-two">
   <a target="_blank" href="https://app.vyond.com/videos/a33f48b7-04d3-43fc-9a14-0d9a3cf5c59e">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-gemmer-du-en-visning.png" hspace="10" alt="Sådan gemmer du en visning" title="Sådan gemmer du en visning" style="width:175px;">
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-gemmer-du-en-visning.png" alt="Sådan gemmer du en visning" title="Sådan gemmer du en visning" style="width:175px;">
   <div class="text-block"><p>Sådan gemmer du en visning<br>(00.44)</p></div>
   </div>
 
   <div class="main-three">
   <a target="_blank" href="https://app.vyond.com/videos/11ab91ca-6a76-43ee-b3d6-bc39427acb87">
-  <img src="https://i.imgur.com/38TwL8h.png" hspace="10" alt="Sådan sletter du gemte visninger" title="Sådan sletter du gemte visninger" style="width:175px;">
+  <img src="https://i.imgur.com/38TwL8h.png" alt="Sådan sletter du gemte visninger" title="Sådan sletter du gemte visninger" style="width:175px;">
   <div class="text-block"><p>Sådan sletter du gemte visninger<br>(00.46)</p></div>
   </div>
   
   <div class="main-four">
   <a target="_blank" href="https://app.vyond.com/videos/11ab91ca-6a76-43ee-b3d6-bc39427acb87">
-  <img src="https://i.imgur.com/MbDlh3W.png" hspace="10" alt="Sådan sletter du gemte visninger" title="Sådan sletter du gemte visninger" style="width:175px;">
+  <img src="https://i.imgur.com/MbDlh3W.png" alt="Sådan sletter du gemte visninger" title="Sådan sletter du gemte visninger" style="width:175px;">
   <div class="text-block"><p>Sådan sletter du gemte visninger<br>(00.46)</p></div>
   </div>
   
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides fade" style="columns: 4;">
  
   <div class="main-one">
   <a target="_blank" href="https://app.vyond.com/videos/b6651ca1-9ee3-417c-a512-b25229913015">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-deler-du-en-gemt-visning.png" hspace="10" alt="Sådan deler du gemte visninger" title="Sådan deler du gemte visninger" style="width:175px;">
-  <div class="text-block"><p>Sådan deler du gemte visninger<br>(01.02)</p></div>
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-deler-du-en-gemt-visning.png" alt="Sådan deler du gemte visninger" title="Sådan deler du gemte visninger" style="width:175px;">
+  <div class="text-block" style="width:175px;"><p>Sådan deler du gemte visninger<br>(01.02)</p></div>
   </div>
 
   <div class="main-two">
   <a  target="_blank" href="https://app.vyond.com/videos/d842cb09-081a-4bdc-be8f-952529d95d18">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-printer-du-en-visning.png" hspace="10" alt="Sådan printer du en visning" title="Sådan printer du en visning" style="width:175px;">
-  <div class="text-block"><p>Sådan printer du en visning<br>(01.05)</div>
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-printer-du-en-visning.png" alt="Sådan printer du en visning" title="Sådan printer du en visning" style="width:175px;">
+  <div class="text-block" style="width:175px;"><p>Sådan printer du en visning<br>(01.05)</div>
   </div>
 
   <div class="main-three">
   <a target="_blank" href="https://app.vyond.com/videos/fe762057-819b-4864-a562-3835b0aba2f1">
-  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-abonnerer-du-pa-en-rapport.png" hspace="10" alt="Sådan abonnerer du på en visning" title="Sådan abonnerer du på en visning" style="width:175px;">
-  <div class="text-block"><p>Sådan abonnerer du på en visning<br>(00.44)</p></div>
+  <img src="http://intranet.rm.dk/siteassets/it/bi/bi-portalen/billeder/vyond/sadan-abonnerer-du-pa-en-rapport.png" alt="Sådan abonnerer du på en visning" title="Sådan abonnerer du på en visning" style="width:175px;">
+  <div class="text-block" style="width:175px;"><p>Sådan abonnerer du på en visning<br>(00.44)</p></div>
   </div>
 
 </div>
